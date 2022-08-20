@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean class="com.College" name="c1">
+		<property name="name" value="Raj"></property>
+		<property name="depts">
+			<list>
+				<value>ECE</value>
+				<value>CSE</value>
+				<value>EEE</value>
+			</list>
+		</property>
+		<property name="hods">
+			<set>
+				<value>Ramesh</value>
+				<value>Ramesh</value>
+				<value>Ravi</value>
+			</set>
+		</property>
+		<property name="details">
+			<map>
+				<entry key="ECE" value="123344"/>
+				<entry key="CSE" value="123456"/>
+				<entry key="EEE" value="123457"/>
+			</map>
+		</property>
+		
+		
+	</bean>
+
+	
+
+</beans>
